@@ -49,8 +49,9 @@
     Solución:
     Para el AFD se decidió aceptar las versiones en mayúscula y en minúscula de las jugadas con la estructura descrita en el enunciado.
     [Pieza] -> [Columna][Fila] [+/#]?    y      [Pieza] X [Pieza] [Fila?] [+/#]?
+    No se tendrán en cuenta los casos especíales como 0-0 y 0-0-0
     
-2. [𝐴 − 𝑍𝑎 − 𝑍][𝐴 − 𝑍𝑎 − 𝑧0 − 9] *. Implemente un AFD en Python. Realice mínimo 5 pruebas, tres donde “ACEPTE” y dos donde “NO ACEPTE”
+3. [𝐴 − 𝑍𝑎 − 𝑍][𝐴 − 𝑍𝑎 − 𝑧0 − 9] *. Implemente un AFD en Python. Realice mínimo 5 pruebas, tres donde “ACEPTE” y dos donde “NO ACEPTE”
    
   Esta expresión regular nos dice que solo acepta cadenas que empiecen con una letra (ya sea mayúscula o minúscula), esta podría estar seguida o no
   por una combinación de letras (ya sean mayúsculas o minúsculas) y de números, la expresión regular no acepta cadenas que empiezan con números o
