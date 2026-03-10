@@ -32,7 +32,9 @@ raiz: term
       double x_nuevo = x;
       for (int i = 0; i < 1000; i++) {
           x_nuevo = 0.5 * (x + $3 / x);
-          if (fabs(x_nuevo - x) < tolerancia) break;
+          double diff = x_nuevo - x;
+          double t = diff >=  0 ? diff : -diff;
+          if (t < tolerancia) break;
           x = x_nuevo;
       }
       $$ = (int)x_nuevo;
