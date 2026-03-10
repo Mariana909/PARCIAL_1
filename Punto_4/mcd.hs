@@ -11,7 +11,7 @@ timeFunc action = do
     result <- action
     end    <- getCPUTime
     let diff = fromIntegral (end - start) / (10^12) :: Double
-    printf "Tiempo de ejecución: %0.6f sec\n" diff
+    printf "Tiempo de ejecución: %0.6f segundos\n" diff
     return result
 
 main :: IO ()
