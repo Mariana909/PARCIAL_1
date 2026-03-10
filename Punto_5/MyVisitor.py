@@ -4,7 +4,7 @@ class MyVisitor(MaclaurinVisitor):
 
     def visitExpr(self, ctx):
         x = self.visit(ctx.numero())
-        n = int(ctx.n.text)          # ← ctx.n por el alias
+        n = int(ctx.n.text)        
         
         print(f"e^{x} con {n} términos:\n")
         
