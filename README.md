@@ -42,7 +42,7 @@
     Ej: KBxQN o BxN
    
     Pero en el enunciado:
-    [Pieza] X [Pieza] [Fila?] [+/#]?
+    [Pieza]  X  [Pieza] [Fila?] [+/#]?
 
     Ej: kb X qn o b X n
 
