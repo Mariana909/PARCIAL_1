@@ -54,7 +54,7 @@ Requisitos
 
     Para ejecutar: python afd.py entrada.txt
     
-3. [𝐴 − 𝑍𝑎 − 𝑍][𝐴 − 𝑍𝑎 − 𝑧0 − 9] *. Implemente un AFD en Python. Realice mínimo 5 pruebas, tres donde “ACEPTE” y dos donde “NO ACEPTE”
+2. [𝐴 − 𝑍𝑎 − 𝑍][𝐴 − 𝑍𝑎 − 𝑧0 − 9] *. Implemente un AFD en Python. Realice mínimo 5 pruebas, tres donde “ACEPTE” y dos donde “NO ACEPTE”
    
   Esta expresión regular nos dice que solo acepta cadenas que empiecen con una letra (ya sea mayúscula o minúscula), esta podría estar seguida o no
   por una combinación de letras (ya sean mayúsculas o minúsculas) y de números, la expresión regular no acepta cadenas que empiezan con números o
@@ -63,3 +63,5 @@ Requisitos
   Para ejecutar: python afd2.py entrada2.txt
   
 3. Escriba un programa en C que implementa una calculadora que pueda sacar raíz cuadrada de números reales. Use flex y Bison. Para el cálculo de la raíz cuadrada use el método numérico Newton-Raphson [ver enlace]. La entrada debe ser por un archivo de texto y la salida debe ser por consola.
+    Teniendo como base una calculadora que hace operaciones básicas, se anexa la operación raíz
+    La raíz se expresa raiz 9, lo que daría como resultado 3
