@@ -1,5 +1,9 @@
 Requisitos
   * Python
+  * Java
+  * gcc
+  * flex
+  * bison
   * Antlr4
 
 
