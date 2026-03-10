@@ -7,6 +7,8 @@
 "*"    { return MUL; }
 "/"    { return DIV; }
 "|"    { return '|'; }
+"("    { return '('; }
+")"    { return ')'; }
 "raiz" { return RAIZ;}
 [0-9]+ { yylval = atoi(yytext); return NUMBER; }
 \n     { return EOL; }
