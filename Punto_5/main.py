@@ -20,9 +20,12 @@ try:
             for linea in datos:
                 if linea.strip():
                     print(f"\n── Entrada: {linea} ──")
-                    procesar(linea.strip())
+                    try:                         
+                        procesar(linea.strip())
+                    except Exception:
+                        print("Entrada inválida") 
     else:
-        entrada = input("Ingresa la expresión (ej: EXP(2, 10)): ")
+        entrada = input()
         procesar(entrada)
 
 except FileNotFoundError:
