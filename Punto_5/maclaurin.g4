@@ -2,7 +2,7 @@ grammar Maclaurin;
 
 // ─── PARSER ───
 prog   : expr EOF ;
-expr   : EXP '(' numero ',' ENTERO ')' ;
+expr   : EXP '(' numero ',' n=ENTERO ')' ;
 numero : SIGNO? (ENTERO | DECIMAL) ;
 
 // ─── LÉXICO ───
