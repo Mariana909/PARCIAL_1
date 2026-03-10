@@ -53,6 +53,11 @@ Requisitos
     No se tendrán en cuenta los casos especíales como 0-0 y 0-0-0
 
     Para ejecutar: python afd.py entrada.txt
+
+    Salida:
+   
+    <img width="91" height="255" alt="image" src="https://github.com/user-attachments/assets/d2b772d1-918a-4e2d-b2a4-1b93f9f30e69" />
+
     
 2. [𝐴 − 𝑍𝑎 − 𝑍][𝐴 − 𝑍𝑎 − 𝑧0 − 9] *. Implemente un AFD en Python. Realice mínimo 5 pruebas, tres donde “ACEPTE” y dos donde “NO ACEPTE”
    
@@ -61,6 +66,11 @@ Requisitos
   cadenas que contengan símbolos diferentes a letras y números.
 
   Para ejecutar: python afd2.py entrada2.txt
+
+  Salida:
+  
+  <img width="91" height="202" alt="image" src="https://github.com/user-attachments/assets/ecb00156-0fd0-4641-9ae3-a4b8fbac55ac" />
+
   
 3. Escriba un programa en C que implementa una calculadora que pueda sacar raíz cuadrada de números reales. Use flex y Bison. Para el cálculo de la raíz cuadrada use el método numérico Newton-Raphson [ver enlace]. La entrada debe ser por un archivo de texto y la salida debe ser por consola.
     Teniendo como base la calculadora del ejercicio 3 del primer capítulo, quitando las operaciones bitwise se anexa la operación raíz
