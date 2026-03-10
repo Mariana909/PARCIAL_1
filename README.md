@@ -63,5 +63,27 @@ Requisitos
   Para ejecutar: python afd2.py entrada2.txt
   
 3. Escriba un programa en C que implementa una calculadora que pueda sacar raíz cuadrada de números reales. Use flex y Bison. Para el cálculo de la raíz cuadrada use el método numérico Newton-Raphson [ver enlace]. La entrada debe ser por un archivo de texto y la salida debe ser por consola.
-    Teniendo como base una calculadora que hace operaciones básicas, se anexa la operación raíz
+    Teniendo como base la calculadora del ejercicio 3 del primer capítulo, quitando las operaciones bitwise se anexa la operación raíz
     La raíz se expresa raiz(9), lo que daría como resultado 3
+   
+4. Para el algoritmo recursivo de Euclides, implemente una comparación de rendimiento entre C como lenguaje imperativo y Haskell, lenguaje declarativo. Haga     un análisis de los resultados obtenidos.
+
+   Algoritmo Recursivo de Euclide: Se usa para hallar el máximo común divisor de dos números, esto haciendo uso del módulo
+   
+   Pseudocódigo
+   
+   Funcion mcd(a, b):
+    Si b == 0:
+        Retornar a
+    Si no:
+        Retornar mcd(b, a MOD b)
+
+   Para comparar el rendimiento se mide el tiempo que tarda cada función en calcular el resultado, en C se usa time.h y en haskell se usa System.CPUTime
+
+5. Escriba un programa en ANTLR que pueda calcular los primeros 𝑛 términos de la serie de Maclaurin para e^x
+
+   e^x = x^n/x!
+
+   Para resolver este ejercicio se escribe la gramática del lenguaje en el archivo maclaurin.g4
+   Allí se definen los token que acepta el lenguaje, es decir números reales y la palabra exp
+   exp(entero o decimal, entero), calculamoso e^x con n términos
