@@ -33,4 +33,5 @@ try:
 		print("No se detectó archivo de entrada")
 
 except:
+
 	print(" No se encontró el archivo")   
