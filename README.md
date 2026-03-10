@@ -80,8 +80,15 @@ Requisitos
 3. Escriba un programa en C que implementa una calculadora que pueda sacar raíz cuadrada de números reales. Use flex y Bison. Para el cálculo de la raíz cuadrada use el método numérico Newton-Raphson [ver enlace]. La entrada debe ser por un archivo de texto y la salida debe ser por consola.
     Teniendo como base la calculadora del ejercicio 3 del primer capítulo, quitando las operaciones bitwise se anexa la operación raíz
     La raíz se expresa raiz(9), lo que daría como resultado 3
-   
-4. Para el algoritmo recursivo de Euclides, implemente una comparación de rendimiento entre C como lenguaje imperativo y Haskell, lenguaje declarativo. Haga     un análisis de los resultados obtenidos.
+
+   Comandos
+   <img width="511" height="284" alt="image" src="https://github.com/user-attachments/assets/e710f3d8-cc24-435e-b0f0-32b85d170381" />
+
+   Pasando entrada3.txt
+
+   <img width="373" height="320" alt="image" src="https://github.com/user-attachments/assets/1b7e5031-d7bd-4241-bd85-6aad5a0f6653" />
+
+5. Para el algoritmo recursivo de Euclides, implemente una comparación de rendimiento entre C como lenguaje imperativo y Haskell, lenguaje declarativo. Haga     un análisis de los resultados obtenidos.
 
    Algoritmo Recursivo de Euclide: Se usa para hallar el máximo común divisor de dos números, esto haciendo uso del módulo
    
@@ -95,7 +102,7 @@ Requisitos
 
    Para comparar el rendimiento se mide el tiempo que tarda cada función en calcular el resultado, en C se usa time.h y en haskell se usa System.CPUTime
 
-5. Escriba un programa en ANTLR que pueda calcular los primeros 𝑛 términos de la serie de Maclaurin para e^x
+6. Escriba un programa en ANTLR que pueda calcular los primeros 𝑛 términos de la serie de Maclaurin para e^x
 
    e^x = x^n/x!
 
