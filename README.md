@@ -104,18 +104,24 @@ Requisitos
 
    Comandos:
 
-   <img width="725" height="248" alt="image" src="https://github.com/user-attachments/assets/1a366efa-ebbb-4984-a84a-184334fd57f3" />
+   <img width="729" height="94" alt="image" src="https://github.com/user-attachments/assets/e66cabb8-65d8-4a04-bac7-516d917d2579" />
+
+   <img width="706" height="153" alt="image" src="https://github.com/user-attachments/assets/00205467-3fd7-4f34-a6a6-1dc56512db37" />
+
 
     Salidas:
 
     Lenguaje         Resultado      Tiempo       
     C                    1         0.000002 s       
-    Haskelll             1         0.001866 s
+    Haskelll             1         0.001954 s
 
-    0.001866 s - 0.000002 s = 0.001864 s
-    Haskell tarda 0.001864 s más que C
+    0.001866 s - 0.000002 s = 0.001952 s
+    Haskell tarda 0.001952 s más que C
 
-6. Escriba un programa en ANTLR que pueda calcular los primeros 𝑛 términos de la serie de Maclaurin para e^x
+    Con entradas grandes como números de Fibonacci consecutivos (701408733, 433494437), C ejecuta en microsegundos mientras Haskell tarda milisegundos
+    Esto se debe principalmente al overhead del runtime de Haskell y su evaluación lazy.
+   
+5. Escriba un programa en ANTLR que pueda calcular los primeros 𝑛 términos de la serie de Maclaurin para e^x
 
    e^x = x^n/x!
 
