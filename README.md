@@ -88,7 +88,7 @@ Requisitos
 
    <img width="373" height="320" alt="image" src="https://github.com/user-attachments/assets/1b7e5031-d7bd-4241-bd85-6aad5a0f6653" />
 
-5. Para el algoritmo recursivo de Euclides, implemente una comparación de rendimiento entre C como lenguaje imperativo y Haskell, lenguaje declarativo. Haga     un análisis de los resultados obtenidos.
+4. Para el algoritmo recursivo de Euclides, implemente una comparación de rendimiento entre C como lenguaje imperativo y Haskell, lenguaje declarativo. Haga     un análisis de los resultados obtenidos.
 
    Algoritmo Recursivo de Euclide: Se usa para hallar el máximo común divisor de dos números, esto haciendo uso del módulo
    
@@ -102,10 +102,19 @@ Requisitos
 
    Para comparar el rendimiento se mide el tiempo que tarda cada función en calcular el resultado, en C se usa time.h y en haskell se usa System.CPUTime
 
-6. Escriba un programa en ANTLR que pueda calcular los primeros 𝑛 términos de la serie de Maclaurin para e^x
+5. Escriba un programa en ANTLR que pueda calcular los primeros 𝑛 términos de la serie de Maclaurin para e^x
 
    e^x = x^n/x!
 
    Para resolver este ejercicio se escribe la gramática del lenguaje en el archivo maclaurin.g4
    Allí se definen los token que acepta el lenguaje, es decir números reales y la palabra exp
    exp(entero o decimal, entero), calculamoso e^x con n términos
+
+   Comando:
+
+   <img width="262" height="32" alt="image" src="https://github.com/user-attachments/assets/574979b3-d48c-4adb-9b35-27ed1cfcee78" />
+   
+
+   Ejemplo de Salida:
+
+   <img width="499" height="402" alt="image" src="https://github.com/user-attachments/assets/8712c4ea-d73d-4b51-9988-b66ea66bedfb" />
