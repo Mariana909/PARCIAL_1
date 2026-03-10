@@ -1,3 +1,9 @@
+%{
+#include <stdio.h>
+int yylex();
+void yyerror(char *s);
+extern FILE *yyin;  /* Variable que Flex usa para la entrada */
+%}
 /* declare tokens */
 %token NUMBER
 %token ADD SUB MUL DIV RAIZ
@@ -20,10 +26,48 @@ factor: raiz
   ;
 
 raiz: term
-  | RAIZ '(' exp ')' { ; }  
+  | RAIZ '(' exp ')' {
+      double x = $3 / 2.0;
+      double tolerancia = 1e-10;
+      double x_nuevo = x;
+      for (int i = 0; i < 1000; i++) {
+          x_nuevo = 0.5 * (x + $3 / x);
+          if (fabs(x_nuevo - x) < tolerancia) break;
+          x = x_nuevo;
+      }
+      $$ = (int)x_nuevo;
+  }
   ;
 
 term: NUMBER
   | '(' exp ')'       { $$ = $2; }
   | '|' exp '|'       { $$ = $2 >= 0 ? $2 : -$2; }
   ;
+%%
+int main(int argc, char **argv) {
+    if (argc > 1) {
+        /* Si hay argumento, abrir el archivo */
+        yyin = fopen(argv[1], "r");
+        if (!yyin) {
+            fprintf(stderr, "Error: No se puede abrir el archivo '%s'\n", argv[1]);
+            return 1;
+        }
+        printf("Procesando archivo: %s\n\n", argv[1]);
+    } else {
+        /* Si no hay argumento, usar entrada estándar */
+        printf("Calculadora con raiz - Ctrl+D para salir\n");
+        yyin = stdin;
+    }
+    
+    yyparse();
+    
+    if (yyin != stdin) {
+        fclose(yyin);
+    }
+    
+    return 0;
+}
+
+void yyerror(char *s) {
+    fprintf(stderr, "Error: %s\n", s);
+}
