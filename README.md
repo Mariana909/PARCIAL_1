@@ -64,4 +64,4 @@ Requisitos
   
 3. Escriba un programa en C que implementa una calculadora que pueda sacar raíz cuadrada de números reales. Use flex y Bison. Para el cálculo de la raíz cuadrada use el método numérico Newton-Raphson [ver enlace]. La entrada debe ser por un archivo de texto y la salida debe ser por consola.
     Teniendo como base una calculadora que hace operaciones básicas, se anexa la operación raíz
-    La raíz se expresa raiz 9, lo que daría como resultado 3
+    La raíz se expresa raiz(9), lo que daría como resultado 3
