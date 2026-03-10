@@ -102,7 +102,20 @@ Requisitos
 
    Para comparar el rendimiento se mide el tiempo que tarda cada función en calcular el resultado, en C se usa time.h y en haskell se usa System.CPUTime
 
-5. Escriba un programa en ANTLR que pueda calcular los primeros 𝑛 términos de la serie de Maclaurin para e^x
+   Comandos:
+
+   <img width="725" height="248" alt="image" src="https://github.com/user-attachments/assets/1a366efa-ebbb-4984-a84a-184334fd57f3" />
+
+    Salidas:
+
+    Lenguaje         Resultado      Tiempo       
+    C                    1         0.000002 s       
+    Haskelll             1         0.001866 s
+
+    0.001866 s - 0.000002 s = 0.001864 s
+    Haskell tarda 0.001864 s más que C
+
+6. Escriba un programa en ANTLR que pueda calcular los primeros 𝑛 términos de la serie de Maclaurin para e^x
 
    e^x = x^n/x!
 
@@ -110,7 +123,7 @@ Requisitos
    Allí se definen los token que acepta el lenguaje, es decir números reales y la palabra exp
    exp(entero o decimal, entero), calculamoso e^x con n términos
 
-   Comando:
+   Comandos:
 
    <img width="262" height="32" alt="image" src="https://github.com/user-attachments/assets/574979b3-d48c-4adb-9b35-27ed1cfcee78" />
    
