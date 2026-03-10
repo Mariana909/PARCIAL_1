@@ -2,6 +2,7 @@ Requisitos
   * Python
   * Java
   * gcc
+  * ghc
   * flex
   * bison
   * Antlr4
